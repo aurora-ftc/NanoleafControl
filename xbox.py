@@ -10,5 +10,6 @@ class Xbox:
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL
         )
+        print("Xbox Returncode:", result.returncode)
         return result.returncode == 0
         

@@ -10,11 +10,20 @@ class Nanoleaf:
                 "value": True
             }
         }
-        requests.put(self.url, json=payload)
+
+        response = requests.put(self.url, json=payload)
+
+        print(response.status_code)
+        print(response.text)       
+
     def off(self):
         payload = {
             "on": {
                 "value": False
             }
         }
-        requests.put(self.url, json=payload)
+
+        response = requests.put(self.url, json=payload)
+
+        print(response.status_code)
+        print(response.text)

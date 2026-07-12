@@ -17,6 +17,8 @@ nanoleaf = Nanoleaf(nanoleaf_ip, nanoleaf_token)
 
 xbox = Xbox(xbox_ip)
 
+last_state = False
+
 while True:
     current_state = xbox.is_on()
 
